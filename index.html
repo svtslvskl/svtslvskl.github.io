@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>FasterPay</title>
 </head>
 <body>
-    <script src="https://pay.fasterpay.com/pay.js"
+    <h2>Custom integartion</h2>
+    <form action="https://pay.fasterpay.com/payment/form" method="post">
+        <input id="amount" name="amount" value="1" type="hidden">
+        <input id="currency" name="currency" value="USD" type="hidden">
+        <input id="api_key" name="api_key" value="daaba95cab624884b32b7ead8d67fcbc" type="hidden">
+        <input id="merchant_order_id" name="merchant_order_id" value="1" type="text">
+        <input id="description" name="description" value="Spice" type="text">
+        <button type="submit">Pay Now</button>
+     </form>
+    <br>
+    <h2>Pay Button</h2>
+    <script
+        src="https://pay.fasterpay.com/pay.js"
         amount="1"
         currency="USD"
         description="Spice"
